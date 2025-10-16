@@ -1,4 +1,11 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
+
+const browser = await puppeteer.launch({
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  headless: true,
+  executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome-stable', // oppure verifica path corretto
+});
+
 
 module.exports = async (req, res) => {
     const { url } = req.query;
