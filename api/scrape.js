@@ -11,7 +11,6 @@ module.exports = async (req, res) => {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
       headless: true,
-      executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome-stable',
     });
 
     const page = await browser.newPage();
