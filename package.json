@@ -5,7 +5,9 @@
   "scripts": {
     "postinstall": "puppeteer install"
   },
-  "dependencies": {
-    "puppeteer": "^24.15.0"
+ "dependencies": {
+  "puppeteer-core": "^24.0.0"
+}
+
   }
 }
