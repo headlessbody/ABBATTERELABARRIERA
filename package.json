@@ -2,7 +2,10 @@
   "name": "gmaps-scraper",
   "version": "1.0.0",
   "main": "api/scrape.js",
+  "scripts": {
+    "postinstall": "puppeteer install"
+  },
   "dependencies": {
-      "puppeteer": "^24.15.0"
+    "puppeteer": "^24.15.0"
   }
 }
